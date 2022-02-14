@@ -7,10 +7,11 @@ const products = [
   '1x59 Lenovo commercial yoga laptop',
   'LG supernova laptop',
   'HTC low price Phone',
-  'purple color phone with Laptop'
+  'Dell purple color phone with Laptop'
 ];
 
 const searching = 'laptop';
+const searchingDell = 'Dell';
 
 
 
@@ -22,13 +23,25 @@ const searching = 'laptop';
 //   }
 // }
 // console.log(output);
-
+ 
 
 
 // Using -- includes method
+// const output = [];
+// for (const product of products) {
+//   if(product.toLocaleLowerCase().includes(searching.toLocaleLowerCase())){
+//     output.push(product);
+//   }
+// }
+// console.log(output);
+
+
+
+// find Start with name by startWith function 
 const output = [];
+
 for (const product of products) {
-  if(product.toLocaleLowerCase().includes(searching.toLocaleLowerCase())){
+  if(product.toLocaleLowerCase().startsWith(searchingDell.toLocaleLowerCase())){
     output.push(product);
   }
 }
